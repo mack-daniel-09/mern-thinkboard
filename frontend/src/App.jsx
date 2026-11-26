@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import Homepage from "./pages/Homepage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import CreatePage from "./pages/CreatePage.jsx";
 import NoteDetails from "./pages/NoteDetails.jsx";
 
@@ -8,7 +8,7 @@ const App = () => {
     <div className="relative min-h-screen w-full">
       <div className="absolute inset-0 -z-10 min-h-screen w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_60%,#00FF9D40_100%)]" />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
         <Route path="/note/:id" element={<NoteDetails />} />
       </Routes>
